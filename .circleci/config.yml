@@ -1,0 +1,11 @@
+# Check https://circleci.com/docs/2.0/language-java/ for more details
+#
+version: 2
+jobs:
+  build:
+    machine: ubuntu-2004:202008-01
+    steps:
+      - checkout
+
+      - run: sudo apt-get update && sudo apt-get install openjdk-8-jdk
+      - run: export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64 && mvn -B clean install

@@ -1,0 +1,9 @@
+/elastic-source-connect.iml
+/target/
+/.idea/
+/lib/
+/.vscode/
+/.settings/
+.factorypath
+.classpath
+.project
